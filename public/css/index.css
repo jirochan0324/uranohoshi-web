@@ -386,6 +386,8 @@ body {
   margin-left: 20px;
   cursor: pointer;
   position: relative;
+  transition: all 0.2s;
+  color: #333;
 }
 .header .header-wrap nav .nav .main-nav .sub-nav-list {
   position: absolute;
@@ -406,6 +408,9 @@ body {
 }
 .header .header-wrap nav .nav .main-nav:first-child {
   margin-left: 0px;
+}
+.header .header-wrap nav .nav .main-nav:hover {
+  color: #9598c2;
 }
 
 .fv {

@@ -97,6 +97,8 @@ body{
                     margin-left: 20px;
                     cursor: pointer;
                     position: relative;
+                    transition: all .2s;
+                    color: $black;
                     .sub-nav-list{
                         position: absolute;
                         top: 80px;
@@ -116,6 +118,9 @@ body{
                     }
                     &:first-child{
                         margin-left: 0px;
+                    }
+                    &:hover{
+                        color: $submain;
                     }
                 }
             }
