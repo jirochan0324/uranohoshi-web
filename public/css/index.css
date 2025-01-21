@@ -361,12 +361,15 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.header .header-wrap h1 {
+  width: 280px;
+}
 .header .header-wrap h1 a {
-  text-decoration: none;
-  color: #333;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 0.14rem;
+  width: 100%;
+}
+.header .header-wrap h1 a img {
+  display: block;
+  width: 100%;
 }
 .header .header-wrap nav {
   color: #333;
@@ -389,7 +392,7 @@ body {
   top: 80px;
   list-style-type: none;
   text-align: left;
-  background-color: #2AA4DB;
+  background-color: #3f508e;
   display: none;
   z-index: 100;
 }
@@ -548,7 +551,7 @@ body {
 }
 .section .section-content .head2 {
   font-size: clamp(2rem, 1.273rem + 3.64vw, 4rem);
-  color: #2AA4DB;
+  color: #3f508e;
   letter-spacing: 1.5;
   text-align: center;
   position: relative;
@@ -564,7 +567,7 @@ body {
   width: 14px;
   height: 14px;
   border-radius: 9999px;
-  background-color: #2AA4DB;
+  background-color: #3f508e;
 }
 .section .section-content .head2::before {
   content: "";
@@ -576,7 +579,7 @@ body {
   width: 14px;
   height: 14px;
   border-radius: 9999px;
-  background-color: #2AA4DB;
+  background-color: #3f508e;
 }
 
 .info-inp-wrap {
@@ -652,11 +655,11 @@ body {
   max-width: 120px;
   min-width: 72px;
   font-size: 1.2rem;
-  color: #2AA4DB;
+  color: #3f508e;
   background-color: #fff;
-  border-top: #2AA4DB solid 2px;
-  border-right: #2AA4DB solid 2px;
-  border-left: #2AA4DB solid 2px;
+  border-top: #3f508e solid 2px;
+  border-right: #3f508e solid 2px;
+  border-left: #3f508e solid 2px;
   margin-left: 4px;
   border-radius: 4px 4px 0px 0px;
   transition: all 0.2s;
@@ -668,14 +671,14 @@ body {
   margin-left: 0px;
 }
 .news-wrap .news-nav-wrap .news-btn.active {
-  background-color: #2AA4DB;
+  background-color: #3f508e;
   color: #fff;
 }
 .news-wrap .news-list-wrap {
   width: 100%;
   background-color: #fff;
   padding: 32px 24px 24px;
-  border-top: #2AA4DB solid 3px;
+  border-top: #3f508e solid 3px;
   border-radius: 0px 0px 16px 16px;
 }
 .news-wrap .news-list-wrap .news-list {
@@ -683,7 +686,7 @@ body {
 }
 .news-wrap .news-list-wrap .news-list .news-item {
   padding: 24px 8px;
-  border-bottom: #2AA4DB dotted 2px;
+  border-bottom: #3f508e dotted 2px;
 }
 .news-wrap .news-list-wrap .news-list .news-item:not(:first-child) {
   margin-top: 24px;
@@ -698,7 +701,7 @@ body {
 }
 .news-wrap .news-list-wrap .news-list .news-item .news-link .news-ttl {
   font-size: clamp(1.2rem, 1.044rem + 0.78vw, 1.6rem);
-  color: #2AA4DB;
+  color: #3f508e;
   font-weight: 500;
 }
 .news-wrap .news-list-wrap .news-btn-more {
@@ -710,14 +713,14 @@ body {
   padding: 16px;
   font-size: 1.4rem;
   color: #fff;
-  background-color: #2AA4DB;
-  border: solid 2px #2AA4DB;
+  background-color: #3f508e;
+  border: solid 2px #3f508e;
   transition: all 0.2s;
   position: relative;
 }
 .news-wrap .news-list-wrap .news-btn-more:hover {
   background-color: #fff;
-  border: solid 2px #2AA4DB;
-  color: #2AA4DB;
-  box-shadow: 8px 8px 0px 0px #2AA4DB;
+  border: solid 2px #3f508e;
+  color: #3f508e;
+  box-shadow: 8px 8px 0px 0px #3f508e;
 }/*# sourceMappingURL=index.css.map */
