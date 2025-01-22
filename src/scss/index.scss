@@ -4,66 +4,6 @@ body{
     font-family: "Noto Sans JP", serif;
 }
 
-.alert-wrap{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    .alert{
-        border: solid 3px #4BA4E8;
-        width: 800px;
-        height: 560px;
-        background-color: white;
-        border-radius: 20px;
-        padding: 40px 80px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        opacity: 0;
-        transform: scale(0);
-        p{
-            font-size: 1.6rem;
-            margin-top: 32px;
-            color: #333;
-            letter-spacing: .15rem;
-        }
-        button{
-            width: 100px;
-            height: 40px;
-            margin-top: 64px;
-            border: solid 1px #4BA4E8;
-            text-align: center;
-            color: #4BA4E8;
-            border-radius: 10px;
-            transition: ease .4s;
-            &:hover{
-                color: white;
-                background-color: #4BA4E8;
-            }
-        }
-    }
-    .alert.active{
-        animation-name: alert;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-timing-function: ease;
-    }
-}
-
-
-@keyframes alert{
-    from{
-        opacity:0;
-        transform: scale(.7);
-    }
-    to{
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
 .header{
     width: 100%;
     display: flex;
@@ -542,7 +482,7 @@ body{
         justify-content: start;
         .mainvisual{
             width: 100%;
-            height: 100vh;
+            height: 640px;
             border-radius: 0px;
             display: flex;
             flex-direction: column;

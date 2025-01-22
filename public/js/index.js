@@ -1,20 +1,3 @@
-// アラートを表示・非表示
-// const alertWrap=document.querySelector('.alert-wrap');
-// const alert=document.querySelector('.alert');
-// const closeBtn=document.getElementById('close');
-
-// window.addEventListener('load',function(){
-//     alert.classList.add('active');
-// })
-
-
-// closeBtn.addEventListener('click',function(){
-//     alertWrap.style.display="none";
-// })
-
-
-
-
 // aタグの動作を停止
 const Atag=document.querySelectorAll('a');
 console.log(Atag);
