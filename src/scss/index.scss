@@ -449,3 +449,58 @@ body{
         }
     }
 }
+
+.pu-wrap{
+    width: 100%;
+    background-color: #fff;
+    padding: 32px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .pu-list{
+        width: 100%;
+        max-width: 1140px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        .pu-content{
+            width: 240px;
+            height: 160px;
+            border: solid 8px $main;
+            border-radius: 8px;
+            .pu-item{
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+// モバイルサイズ
+
+@media (max-width: 428px) {
+    .header{
+        .header-wrap{
+            display: none;
+        }
+    }
+    .fv{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        .mainvisual{
+            border-radius: 0px;
+            .fv-h2-wrap{
+                .fv-h2{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    .link-list{
+        display: none;
+    }
+}
