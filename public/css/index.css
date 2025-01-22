@@ -760,12 +760,12 @@ body {
   width: 100%;
 }
 
-@media (max-width: 428px) {
+@media only screen and (max-width: 428px) {
   .header {
-    height: 80px;
+    height: 72px;
     z-index: 999;
     background-color: #FFFFFF;
-    padding: 16px 0px;
+    padding: 8px 0px;
   }
   .header .header-wrap {
     display: flex;
@@ -773,7 +773,7 @@ body {
     align-items: center;
   }
   .header .header-wrap h1 {
-    width: 216px;
+    width: 180px;
   }
   .header .header-wrap h1 a {
     width: 100%;

@@ -484,18 +484,18 @@ body{
 
 // モバイルサイズ
 
-@media (max-width: 428px) {
+@media only screen and (max-width: 428px) {
     .header{
-        height: 80px;
+        height: 72px;
         z-index: 999;
         background-color: $white;
-        padding: 16px 0px;
+        padding: 8px 0px;
         .header-wrap{
             display: flex;
             justify-content: center;
             align-items: center;
             h1{
-                width: 216px;
+                width: 180px;
                 a{
                     width: 100%;
                     img{
