@@ -767,6 +767,7 @@ body {
     height: 80px;
     z-index: 999;
     background-color: #FFFFFF;
+    padding: 16px 0px;
   }
   .header .header-wrap .g-nav {
     display: none;
