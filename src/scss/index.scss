@@ -486,7 +486,11 @@ body{
 
 @media (max-width: 428px) {
     .header{
+        position: fixed;
+        top: 0;
         height: 80px;
+        z-index: 999;
+        background-color: $white;
         .header-wrap{
             .g-nav{
                 display: none;
