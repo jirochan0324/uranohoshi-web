@@ -761,7 +761,7 @@ body {
   }
   .fv .mainvisual {
     width: 100%;
-    height: 640px;
+    height: 100vh;
     border-radius: 0px;
     display: flex;
     flex-direction: column;
@@ -779,6 +779,7 @@ body {
     display: block;
     width: 100%;
     max-width: 320px;
+    transform: translateY(-80px);
   }
   .fv .mainvisual .fv-h2-wrap {
     display: block;
@@ -788,7 +789,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transform: translateY(80px);
   }
   .fv .mainvisual .fv-h2-wrap .fv-h2 {
     width: fit-content;
