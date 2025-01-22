@@ -486,8 +486,38 @@ body{
 
 @media (max-width: 428px) {
     .header{
+        height: 80px;
         .header-wrap{
-            display: none;
+            .g-nav{
+                display: none;
+            }
+        }
+    }
+    .menu {
+        position: fixed;
+        z-index: 999;
+        top: 0px;
+        right: 0px;
+        height: 80px;
+        width: 80px;
+        background-color: $main;
+        span {
+            display: inline-block;
+            transition: all .4s;
+            position: absolute;
+            left: 18px;
+            height: 3px;
+            background-color: $white;
+            width: 60%;
+            &:nth-of-type(1) {
+            top: 24px;
+            }
+            &:nth-of-type(2) {
+            top: 40px;
+            }
+            &:nth-of-type(3) {
+            top: 56px;
+            }
         }
     }
     .fv{
