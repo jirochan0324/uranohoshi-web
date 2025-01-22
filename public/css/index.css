@@ -812,6 +812,10 @@ body {
   .link-list {
     display: none;
   }
+  .section.important {
+    margin: 40px 0px;
+    padding: 24px;
+  }
   .pu-wrap {
     width: 100%;
     background-color: #fff;
