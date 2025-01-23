@@ -382,7 +382,7 @@ body {
   font-size: clamp(1.4rem, 1.111rem + 3.85vw, 4rem);
   letter-spacing: 1.04rem;
   color: white;
-  font-weight: 400;
+  font-weight: 600;
 }
 .fv .mainvisual .fv-h2-wrap .fv-h2 .fv-h2-text {
   animation-name: fv-text;
@@ -737,16 +737,16 @@ body {
     left: 26px;
     height: 2px;
     background-color: #FFFFFF;
-    width: 40%;
+    width: 32%;
   }
   .header .menu span:nth-of-type(1) {
-    top: 24px;
+    top: 30px;
   }
   .header .menu span:nth-of-type(2) {
-    top: 40px;
+    top: 38px;
   }
   .header .menu span:nth-of-type(3) {
-    top: 56px;
+    top: 46px;
   }
   .fv {
     width: 100%;
@@ -779,33 +779,9 @@ body {
     display: block;
     width: 100%;
     max-width: 320px;
-    transform: translateY(-40px);
   }
   .fv .mainvisual .fv-h2-wrap {
-    display: block;
-    width: 100%;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    transform: translateY(40px);
-  }
-  .fv .mainvisual .fv-h2-wrap .fv-h2 {
-    width: fit-content;
-    font-size: 1.8rem;
-    letter-spacing: 0.8rem;
-    color: white;
-    font-weight: 400;
-  }
-  .fv .mainvisual .fv-h2-wrap .fv-h2 .fv-h2-text {
-    animation-name: fv-text;
-    animation-duration: 1.8s;
-  }
-  .fv .mainvisual .fv-h2-wrap .fv-h2:nth-child(2) {
-    margin-top: 8px;
-    transform: translateX(0px);
+    display: none;
   }
   .section {
     padding: 64px 24px 48px;
