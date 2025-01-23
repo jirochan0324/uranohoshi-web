@@ -704,7 +704,6 @@ body {
     height: 72px;
     z-index: 999;
     background-color: #FFFFFF;
-    padding: 8px 0px;
   }
   .header .header-wrap {
     display: flex;
@@ -723,10 +722,13 @@ body {
   }
   .header .menu {
     position: fixed;
-    left: 0;
+    top: 0;
+    right: 0;
     height: 72px;
     width: 72px;
     background-color: #3f508e;
+    z-index: 999;
+    border-radius: 0 0 0 8px;
   }
   .header .menu span {
     display: inline-block;

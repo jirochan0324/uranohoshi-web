@@ -426,7 +426,6 @@ body{
         height: 72px;
         z-index: 999;
         background-color: $white;
-        padding: 8px 0px;
         .header-wrap{
             display: flex;
             justify-content: center;
@@ -445,10 +444,13 @@ body{
         }
         .menu {
             position: fixed;
-            left: 0;
+            top: 0;
+            right: 0;
             height: 72px;
             width: 72px;
             background-color: $main;
+            z-index: 999;
+            border-radius: 0 0 0 8px;
             span {
                 display: inline-block;
                 transition: all .4s;
