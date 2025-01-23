@@ -810,6 +810,42 @@ body {
     padding: 64px 24px 48px;
   }
   .link-list {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    z-index: 999;
+  }
+  .link-list .link {
+    width: 50%;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .link-list .link .link-name {
+    font-family: "Noto Sans JP", serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .link-list .link:nth-child(1) {
+    background-color: #FF791B;
+  }
+  .link-list .link:nth-child(2) {
+    background-color: #2AA4DB;
+  }
+  .link-list .link:nth-child(3) {
+    display: none;
+  }
+  .link-list .link:nth-child(4) {
+    display: none;
+  }
+  .link-list .link:nth-child(5) {
     display: none;
   }
   .section.important {
