@@ -705,7 +705,7 @@ body {
   width: 100%;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 768px) {
   .header {
     height: 72px;
     z-index: 999;
@@ -761,7 +761,7 @@ body {
   }
   .fv .mainvisual {
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 160px);
     border-radius: 0px;
     display: flex;
     flex-direction: column;
