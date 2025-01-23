@@ -864,14 +864,14 @@ body {
   .pu-wrap .pu-list {
     width: 100%;
     list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
   }
   .pu-wrap .pu-list .pu-content {
-    width: 174px;
-    height: 120px;
+    width: 100%;
+    height: 180px;
     border: solid 8px #3f508e;
     border-radius: 8px;
   }
