@@ -14,14 +14,11 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        h1{
+        a{
             width: 216px;
-            a{
+            img{
+                display: block;
                 width: 100%;
-                img{
-                    display: block;
-                    width: 100%;
-                }
             }
         }
         nav{
@@ -434,45 +431,41 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
-            h1{
+            a{
                 width: 180px;
-                a{
+                img{
+                    display: block;
                     width: 100%;
-                    img{
-                        display: block;
-                        width: 100%;
-                    }
                 }
             }
+
             .g-nav{
                 display: none;
             }
         }
-    }
-    .menu {
-        position: fixed;
-        z-index: 999;
-        bottom: 40px;
-        right: 0px;
-        height: 80px;
-        width: 80px;
-        background-color: $main;
-        span {
-            display: inline-block;
-            transition: all .4s;
-            position: absolute;
-            left: 26px;
-            height: 2px;
-            background-color: $white;
-            width: 40%;
-            &:nth-of-type(1) {
-            top: 24px;
-            }
-            &:nth-of-type(2) {
-            top: 40px;
-            }
-            &:nth-of-type(3) {
-            top: 56px;
+        .menu {
+            position: fixed;
+            left: 0;
+            height: 72px;
+            width: 72px;
+            background-color: $main;
+            span {
+                display: inline-block;
+                transition: all .4s;
+                position: absolute;
+                left: 26px;
+                height: 2px;
+                background-color: $white;
+                width: 40%;
+                &:nth-of-type(1) {
+                top: 24px;
+                }
+                &:nth-of-type(2) {
+                top: 40px;
+                }
+                &:nth-of-type(3) {
+                top: 56px;
+                }
             }
         }
     }
@@ -489,18 +482,25 @@ body{
             align-items: center;
             justify-content: center;
             position: relative;
-            .logo-mobile{
+            .mobile-logo-wrap{
                 position: absolute;
                 top: 0;
                 bottom: 0;
                 right: 0;
                 left: 0;
                 margin: auto;
-                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 width: 100%;
-                max-width: 320px;
-                transform: translateY(-40px);
+                .logo-mobile{
+                    display: block;
+                    width: 100%;
+                    max-width: 320px;
+                    transform: translateY(-40px);
+                }
             }
+
             .fv-h2-wrap{
                 display: block;
                 width: 100%;
@@ -509,11 +509,12 @@ body{
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                text-align: center;
                 transform: translateY(40px);
                 .fv-h2{
                     width: fit-content;
                     font-size: 1.8rem;
-                    letter-spacing: 1.04rem;
+                    letter-spacing: .8rem;
                     color: white;
                     font-weight: 400;
                     .fv-h2-text{

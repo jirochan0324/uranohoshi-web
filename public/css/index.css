@@ -303,13 +303,10 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.header .header-wrap h1 {
+.header .header-wrap a {
   width: 216px;
 }
-.header .header-wrap h1 a {
-  width: 100%;
-}
-.header .header-wrap h1 a img {
+.header .header-wrap a img {
   display: block;
   width: 100%;
 }
@@ -714,29 +711,24 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .header .header-wrap h1 {
+  .header .header-wrap a {
     width: 180px;
   }
-  .header .header-wrap h1 a {
-    width: 100%;
-  }
-  .header .header-wrap h1 a img {
+  .header .header-wrap a img {
     display: block;
     width: 100%;
   }
   .header .header-wrap .g-nav {
     display: none;
   }
-  .menu {
+  .header .menu {
     position: fixed;
-    z-index: 999;
-    bottom: 40px;
-    right: 0px;
-    height: 80px;
-    width: 80px;
+    left: 0;
+    height: 72px;
+    width: 72px;
     background-color: #3f508e;
   }
-  .menu span {
+  .header .menu span {
     display: inline-block;
     transition: all 0.4s;
     position: absolute;
@@ -745,13 +737,13 @@ body {
     background-color: #FFFFFF;
     width: 40%;
   }
-  .menu span:nth-of-type(1) {
+  .header .menu span:nth-of-type(1) {
     top: 24px;
   }
-  .menu span:nth-of-type(2) {
+  .header .menu span:nth-of-type(2) {
     top: 40px;
   }
-  .menu span:nth-of-type(3) {
+  .header .menu span:nth-of-type(3) {
     top: 56px;
   }
   .fv {
@@ -769,13 +761,19 @@ body {
     justify-content: center;
     position: relative;
   }
-  .fv .mainvisual .logo-mobile {
+  .fv .mainvisual .mobile-logo-wrap {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .fv .mainvisual .mobile-logo-wrap .logo-mobile {
     display: block;
     width: 100%;
     max-width: 320px;
@@ -789,12 +787,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     transform: translateY(40px);
   }
   .fv .mainvisual .fv-h2-wrap .fv-h2 {
     width: fit-content;
     font-size: 1.8rem;
-    letter-spacing: 1.04rem;
+    letter-spacing: 0.8rem;
     color: white;
     font-weight: 400;
   }
