@@ -354,6 +354,7 @@ body {
 
 .fv {
   width: 100%;
+  height: 780px;
   display: flex;
   justify-content: start;
 }
@@ -362,9 +363,7 @@ body {
   background-position: center;
   background-size: cover;
   position: relative;
-  width: 100%;
-  max-width: 1280px;
-  height: 720px;
+  width: 90%;
 }
 .fv .mainvisual .logo-mobile {
   display: none;
@@ -703,6 +702,97 @@ body {
   display: block;
   height: 100%;
   width: 100%;
+}
+
+.footer {
+  width: 100%;
+  background-color: #3f508e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footer-wrap {
+  padding: 24px 0px;
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer .footer-wrap .school-inf-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer .footer-wrap .school-inf-wrap .footer-logo {
+  width: 240px;
+}
+.footer .footer-wrap .school-inf-wrap .footer-logo .logo {
+  display: block;
+  width: 100%;
+}
+.footer .footer-wrap .school-inf-wrap .banner-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer .footer-wrap .school-inf-wrap .banner-wrap .banner-img {
+  width: 240px;
+}
+.footer .footer-wrap .school-inf-wrap .banner-wrap .banner-img .banner {
+  display: block;
+  width: 100%;
+}
+.footer .footer-wrap .nav {
+  display: grid;
+  grid-template-columns: repeat(3, 180px);
+  list-style-type: none;
+  gap: 40px;
+  color: #FFFFFF;
+}
+.footer .footer-wrap .nav .main-nav {
+  font-size: 1.8rem;
+}
+.footer .footer-wrap .nav .main-nav .main-nav-ttl {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 8px 0px;
+  border-bottom: solid 2px #FFFFFF;
+}
+.footer .footer-wrap .nav .main-nav .sub-nav-list {
+  margin-top: 16px;
+  margin-left: 24px;
+  font-size: 1.6rem;
+  list-style-type: none;
+}
+.footer .footer-wrap .nav .main-nav .sub-nav-list .sub-nav {
+  position: relative;
+}
+.footer .footer-wrap .nav .main-nav .sub-nav-list .sub-nav::after {
+  display: inline-block;
+  content: "\e5cc";
+  font-family: "Material Icons";
+  position: absolute;
+  left: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+}
+.footer .footer-wrap .nav .main-nav .sub-nav-list .sub-nav a {
+  width: 100%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer .footer-wrap .nav .main-nav .sub-nav-list .sub-nav:not(.footer .footer-wrap .nav .main-nav .sub-nav-list .sub-nav:first-child) {
+  margin-top: 8px;
+}
+.footer .footer-copy {
+  width: 100%;
+  padding: 24px 0px;
+  text-align: center;
+  font-weight: bold;
+  color: #FFFFFF;
 }
 
 @media only screen and (max-width: 768px) {

@@ -67,6 +67,7 @@ body{
 // fv
 .fv{
     width: 100%;
+    height: 780px;
     display: flex;
     justify-content: start;
     .mainvisual{
@@ -74,9 +75,7 @@ body{
         background-position: center;
         background-size: cover;
         position: relative;
-        width: 100%;
-        max-width: 1280px;
-        height: 720px;
+        width: 90%;
         .logo-mobile{
             display: none;
         }
@@ -420,6 +419,98 @@ body{
                 width: 100%;
             }
         }
+    }
+}
+
+
+.footer{
+    width: 100%;
+    background-color: $main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footer-wrap{
+        padding: 24px 0px;
+        width: 100%;
+        max-width: 1080px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .school-inf-wrap{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            .footer-logo{
+                width: 240px;
+                .logo{
+                    display: block;
+                    width: 100%;
+                }
+            }
+            .banner-wrap{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                .banner-img{
+                    width: 240px;
+                    .banner{
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .nav{
+            display: grid;
+            grid-template-columns: repeat(3, 180px);
+            list-style-type: none;
+            gap: 40px;
+            color: $white;
+            .main-nav{
+                font-size: 1.8rem;
+                .main-nav-ttl{
+                    display: block;
+                    width: 100%;
+                    position: relative;
+                    padding: 8px 0px;
+                    border-bottom: solid 2px $white;
+                }
+                .sub-nav-list{
+                    margin-top: 16px;
+                    margin-left:24px;
+                    font-size: 1.6rem;
+                    list-style-type: none;
+                    .sub-nav{
+                        position: relative;
+                        &::after{
+                            display: inline-block;
+                            content: "\e5cc";
+                            font-family: 'Material Icons';
+                            position: absolute;
+                            left: -24px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            font-size: 2rem;
+                        }
+                        a{
+                            width: 100%;
+                            color: $white;
+                            text-decoration: none;
+                        }
+                        &:not(&:first-child){
+                            margin-top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-copy{
+        width: 100%;
+        padding: 24px 0px;
+        text-align: center;
+        font-weight: bold;
+        color: $white;
     }
 }
 
